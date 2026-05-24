@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic image converter</title>
+
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <h2>Basic image converter</h2>
+
+    <div class="control">
+      <div id="dropZone">
+        <p>Drag and drop your image here or <span class="browse-text">click to browse</span></p>
+        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+      </div>
+      <div id="fileInfo"></div>
+    </div>
+
+    <div class="control">
+        <label for="formatSelect">Convert to:</label>
+        <select id="formatSelect">
+            <option value="image/png">PNG</option>
+            <option value="image/jpeg">JPEG (JPG)</option>
+            <option value="image/webp">WebP</option>
+            <option value="image/gif">GIF</option>
+            <option value="image/bmp">BMP</option>
+        </select>
+    </div>
+
+
+    <div class="control">
+      <button id="convertBtn" disabled>Convert Image</button>
+    </div>
+
+    <a id="downloadLink" href="#" style="display: none;">Download Image</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
