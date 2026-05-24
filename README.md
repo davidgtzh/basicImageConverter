@@ -20,12 +20,12 @@ The project is split into three separate files:
 
 Make sure all three files are saved together in the exact same folder on your computer:
 
-folder
+```folder
 ├── index.html   # The structure and layout
 ├── style.css    # The colors, fonts, and designs
 ├── script.js    # The logic and image conversion code
 └── README.md    # This documentation file
-
+```
 
 ---
 
